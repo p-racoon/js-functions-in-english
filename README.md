@@ -56,7 +56,26 @@ In this repo, I intend to describe/express commonly used Built-in JS Object's pr
 
 ### find()
 
+**[Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)**
+
+`let element = array.find(callback(element[, index[, array]])[, thisArg])`
+>iterate over the `array` passing in each `element`, `index`, `array` to the `callback` function, and checking if any of the element returns a truthy value. If it does find an `element`, which gives a truthy value, `element` is returned and iteration is terminated, otherwise if no truthy value is found it returns undefined.
+
+*If you need the index of the found element in the array, use `findIndex()`.
+
+If you need to find the index of a value, use `Array.prototype.indexOf()`. (It’s similar to findIndex(), but checks each element for equality with the value instead of using a testing function.)
+
+If you need to find if a value exists in an array, use `Array.prototype.includes()`.
+Syntax*
+
 ### findIndex()
+
+**[Array.prototype.findIndex()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex)**
+
+`const index = array.findIndex(callback(element[, index[, array]])[, thisArg])`
+>iterate over the `array` passing in each `element`, `index`, `array` to the `callback` function, and checking if any of the element returns a truthy value. If it does find an `element`, which gives a truthy value, `index` of that `element` is returned and iteration terminated, otherwise if no truthy value is found it returns -1.
+
+*If you need the index of the found element in the array, use `findIndex()`.*
 
 ### forEach()
 
