@@ -79,6 +79,14 @@ Syntax*
 
 ### forEach()
 
+**[Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)**
+
+`array.forEach(callback(currentValue [, index [, array]])[, thisArg])`
+>forEach `element` in the `array` execute the `callback` passing in each `element` as `currentValue`, `index`, `array` to the `callback` function.
+
+*does not return anything hence, its return value is `undefined` 
+forEach() does not make a copy of the array before iterating, hence any changes done to the array while `forEach` is iterating over it will be reflectd.*
+
 ### from()
 
 ### includes()
